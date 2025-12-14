@@ -82,7 +82,7 @@ set /p answer=Have you answered all the forensics questions?[y/n]:
 	for /F "tokens=2* delims==" %%G in ('
 		wmic UserAccount where "status='ok'" get name >null
 	') do for %%g in (%%~G) do (
-		net user %%~g Cyb3rPatr!0t$
+		net user %%~g Cyber$Patriots1!
 		)
 	endlocal
 	setlocal enabledelayedexpansion	
@@ -390,4 +390,5 @@ set /p answer=Have you answered all the forensics questions?[y/n]:
 	if /I "%answer%"=="n" (
 		goto :menu
 	)
+
 endlocal
